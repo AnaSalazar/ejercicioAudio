@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio de audio</title>
+  </head>
+  <body align="center" BGCOLOR="#F8E0E6">
+    <h1>Escuchemos la canción</h1>
+    <h2>Utiliza los botones<br>
+    <input type="range" min="0" max="149" value="0.5" id="progreso"></p>
+    <section>
+      <audio id="cancion" src="assets/levanPolkka.mp3" type="audio/mp3">
+      </audio>
+      <button id="reproducir" onclick="reproducir();">Reproducir</button>
+      <button id="pausar" onclick="pausa();">Pausar</button>
+      <button id="detener" onclick="detener();">Detener</button><br>
+      <button id="retroceder" onclick="retroceder(5);">Retroceder</button>
+      <button id="avanzar" onclick="avanzar(5);">Avanzar</button><br>
+      <button id="volumen+" onclick="volumenSubir(.2);">Volumen +</button>
+      <button id="volumen-" onclick="volumenBajar(.2);">Volumen -</button>
+    </section>
+    <script src="assets/js/main_audio.js">
+    </script>
+  </body>
+</html>
